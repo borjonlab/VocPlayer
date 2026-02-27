@@ -37,9 +37,6 @@ function csv2vocstore(csvfile,audiofile,output)
     startIX = round(csv.xmin*fs);
     stopIX = round(csv.xmax*fs);
 
-    if output == ""
-        save(filename+".mat","vocStore","startIX","stopIX");
-    else
-        save(output,"vocStore","startIX","stopIX");
-    end
+    if output
+    save(filename+".mat","vocStore","startIX","stopIX");
 end
