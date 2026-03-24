@@ -1,5 +1,4 @@
 function csv2vocstore(csvfile,audiofile,output)
-    
     %%%%%% Inputs 
             % csvfile[string,char]: Path to .CSV file containing vocalizations. Should
                         % have at least two columns - 
